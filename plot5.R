@@ -72,7 +72,7 @@ baltimoreCityVehiclePm25 <- subset(pm25,
 )
 
 totalBaltimoreCityVehiclePm25ByYear <- tapply(
-  baltimoreCityPm25$Emissions, baltimoreCityPm25$year, sum
+  baltimoreCityVehiclePm25$Emissions, baltimoreCityVehiclePm25$year, sum
 )
 
 totalBaltimoreCityVehiclePm25Emissions <- data.frame(
